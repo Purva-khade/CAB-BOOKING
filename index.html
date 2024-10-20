@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cab Service</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Cab Service</h1>
+    </header>
+    <main>
+        <section class="booking-form">
+            <h2>Book a Cab</h2>
+            <form id="cabForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="pickup">Pickup Location:</label>
+                <input type="text" id="pickup" required>
+
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" required>
+
+                <label for="cabType">Select Cab Type:</label>
+                <select id="cabType" required>
+                    <option value="">Select...</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+            <div id="message"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cab Service</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
